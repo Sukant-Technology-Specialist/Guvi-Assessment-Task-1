@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <section>
+            <form onsubmit="alert('Thank you for submitting the form!');submit();">
+                <div class="card-container">
+                    <div class="form-row">
+                        <label class="column-form-label" for="fullName">Full Name</label>
+                        <div class="column-auto">
+                            <div class="input-group margin-bottom">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                </div>
+                                <input required type="text" class="form-control" id="fullName" name="fullName" placeholder="Full Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="column-form-label" for="addressLine1">Address Line 1</label>
+                        <div class="column-auto">
+                            <div class="input-group margin-bottom">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-address-book-o"></i></div>
+                                </div>
+                                <input required type="text" class="form-control" id="addressLine1" name="addressLine1" placeholder="Address Line 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="column-form-label" for="addressLine2">Address Line 2</label>
+                        <div class="column-auto">
+    
+                            <div class="input-group margin-bottom">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-address-book-o"></i></div>
+                                </div>
+                                <input required type="text" class="form-control" id="addressLine2" name="addressLine2" placeholder="Address Line 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="column-form-label" for="city">City</label>
+                        <div class="column-auto">
+    
+                            <div class="input-group margin-bottom">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-building-o"></i></div>
+                                </div>
+                                <input required type="text" class="form-control" id="city" name="city" placeholder="City">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="column-form-label" for="state/province/region">State/Province/Region</label>
+                        <div class="column-auto">
+    
+                            <div class="input-group margin-bottom">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-map-marker"></i></div>
+                                </div>
+                                <input required type="text" class="form-control" id="state/province/region" name="stateProvinceRegion" placeholder="State/Province/Region">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="column-form-label" for="postalCode/Zip">Postal Code/ZIP</label>
+                        <div class="column-auto">
+    
+                            <div class="input-group margin-bottom">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-envelope-open-o"></i></div>
+                                </div>
+                                <input required type="number" class="form-control" id="postalCode/Zip" name="postalCodeZip" placeholder="Postal Code/ZIP">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="column-form-label" for="country">Country</label>
+                        <div class="column-auto">
+    
+                            <div class="input-group margin-bottom">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-map-o"></i></div>
+                                </div>
+                                <select id="country" name="country"  class="form-control" id="country" placeholder="Country" required>
+                                    <option value="India">India</option>
+                                    <option value="America">America</option>
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="Israel">Israel</option>
+                                 </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="column-form-label" for="email">Email</label>
+                        <div class="column-auto">
+                            <div class="input-group margin-bottom">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                </div>
+                                <input required type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="column-form-label" for="phoneNumber">Phone Number</label>
+                        <div class="column-auto">
+                            <div class="input-group margin-bottom">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                </div>
+                                <input required type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row justify-content-center">
+                        <input required type="submit">
+                    </div>
+                </div>
+            </form>
+       
+        </section>
+<script>
+    function submit(){        
+        document.getElementsByTagName('form')[0].reset();
+    }
+</script>
+</body>
+</html>
